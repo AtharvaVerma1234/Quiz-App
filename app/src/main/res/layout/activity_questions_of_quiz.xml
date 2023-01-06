@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".QuestionsOfQuiz">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="#363a43"
+            tools:text="What country does this flag belong to?"/>
+<!--            The tools text will only appear for the developer not when we run the application-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivFlag"
+            android:layout_margin="14sp"
+            android:contentDescription="Image of a flag"
+            tools:src="@drawable/ic_flag_of_fiji"
+            />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_margin="16sp"
+           android:gravity="center_vertical">
+           <ProgressBar
+               android:id="@+id/ProgressBar"
+               android:layout_width="0dp"
+               style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+               android:indeterminate="false"
+               android:progressTint="@color/pink"
+               android:progressBackgroundTint="@color/pink"
+               android:layout_height="wrap_content"
+               android:layout_weight="5"
+               android:minHeight="50dp"
+               android:max="6"
+               android:progress="2"/>
+           <TextView
+               android:id="@+id/tvProgress"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+              android:padding="10sp"
+               android:gravity="center"
+               tools:text="0/6"
+               android:textSize="14sp"
+               />
+       </LinearLayout>
+        <TextView
+            android:id="@+id/tvOption1"
+            android:textColor="#7a8089"
+            android:background="@drawable/default_option_border_bg"
+            android:layout_margin="10dp"
+            android:padding="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center"
+            tools:text="Option 1"
+            />
+        <TextView
+            android:id="@+id/tvOption2"
+            android:textColor="#7a8089"
+            android:background="@drawable/default_option_border_bg"
+            android:layout_margin="10dp"
+            android:padding="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center"
+            tools:text="Option 2"
+            />
+        <TextView
+            android:id="@+id/tvOption3"
+            android:textColor="#7a8089"
+            android:background="@drawable/default_option_border_bg"
+            android:layout_margin="10dp"
+            android:padding="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center"
+            tools:text="Option 3"
+            />
+        <TextView
+            android:id="@+id/tvOption4"
+            android:textColor="#7a8089"
+            android:background="@drawable/default_option_border_bg"
+            android:layout_margin="10dp"
+            android:padding="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center"
+            tools:text="Option 4"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/submit_button"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:padding="10sp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/pink"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
